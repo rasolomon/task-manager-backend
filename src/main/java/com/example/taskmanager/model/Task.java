@@ -1,7 +1,8 @@
-package com.example.taskmanager.service.model;
+package com.example.taskmanager.model;
 
 public class Task {
     private int id;
+    private String title;
     private String description;
     private boolean completed;
 
@@ -25,11 +26,26 @@ public class Task {
         return completed;
     }
 
+    public void setCompleted(boolean completed) {
+        this.completed = completed;
+    }
 
-    public Task(int id, String description) {
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public Task() {
+    }
+
+    public Task(int id, String title, String description, boolean completed) {
         this.id = id;
+        this.title = title;
         this.description = description;
-        this.completed = false;
+        this.completed = completed;
     }
 
     public void markCompleted() {

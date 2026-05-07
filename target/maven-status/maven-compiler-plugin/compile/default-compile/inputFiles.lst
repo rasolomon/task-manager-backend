@@ -1,4 +1,5 @@
-C:\Users\yelen\dev\projects\task-manager-cli\task-manager-cli\src\main\java\com\example\app\App.java
-C:\Users\yelen\dev\projects\task-manager-cli\task-manager-cli\src\main\java\com\example\taskmanager\service\app\TaskManagerApp.java
-C:\Users\yelen\dev\projects\task-manager-cli\task-manager-cli\src\main\java\com\example\taskmanager\service\model\Task.java
-C:\Users\yelen\dev\projects\task-manager-cli\task-manager-cli\src\main\java\com\example\taskmanager\service\service\TaskService.java
+C:\Users\yelen\dev\projects\task-manager-backend\task-manager\src\main\java\com\example\taskmanager\dao\TaskDao.java
+C:\Users\yelen\dev\projects\task-manager-backend\task-manager\src\main\java\com\example\taskmanager\model\Task.java
+C:\Users\yelen\dev\projects\task-manager-backend\task-manager\src\main\java\com\example\taskmanager\service\TaskService.java
+C:\Users\yelen\dev\projects\task-manager-backend\task-manager\src\main\java\com\example\taskmanager\controller\TaskController.java
+C:\Users\yelen\dev\projects\task-manager-backend\task-manager\src\main\java\com\example\taskmanager\TaskManagerApplication.java
