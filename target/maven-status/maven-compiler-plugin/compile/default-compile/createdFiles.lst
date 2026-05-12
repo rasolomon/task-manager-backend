@@ -1,5 +1,9 @@
 com\example\taskmanager\controller\TaskController.class
-com\example\taskmanager\model\Task.class
+com\example\taskmanager\exception\GlobalExceptionHandler.class
+com\example\taskmanager\exception\TaskNotFoundException.class
 com\example\taskmanager\service\TaskService.class
 com\example\taskmanager\TaskManagerApplication.class
-com\example\taskmanager\dao\TaskDao.class
+com\example\taskmanager\dto\TaskResponseDto.class
+com\example\taskmanager\entity\Task.class
+com\example\taskmanager\dto\TaskRequestDto.class
+com\example\taskmanager\repository\TaskRepository.class

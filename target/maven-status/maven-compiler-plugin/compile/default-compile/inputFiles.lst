@@ -1,5 +1,9 @@
-C:\Users\yelen\dev\projects\task-manager-backend\task-manager\src\main\java\com\example\taskmanager\dao\TaskDao.java
-C:\Users\yelen\dev\projects\task-manager-backend\task-manager\src\main\java\com\example\taskmanager\model\Task.java
+C:\Users\yelen\dev\projects\task-manager-backend\task-manager\src\main\java\com\example\taskmanager\dto\TaskResponseDto.java
+C:\Users\yelen\dev\projects\task-manager-backend\task-manager\src\main\java\com\example\taskmanager\dto\TaskRequestDto.java
+C:\Users\yelen\dev\projects\task-manager-backend\task-manager\src\main\java\com\example\taskmanager\exception\GlobalExceptionHandler.java
+C:\Users\yelen\dev\projects\task-manager-backend\task-manager\src\main\java\com\example\taskmanager\entity\Task.java
+C:\Users\yelen\dev\projects\task-manager-backend\task-manager\src\main\java\com\example\taskmanager\exception\TaskNotFoundException.java
+C:\Users\yelen\dev\projects\task-manager-backend\task-manager\src\main\java\com\example\taskmanager\repository\TaskRepository.java
 C:\Users\yelen\dev\projects\task-manager-backend\task-manager\src\main\java\com\example\taskmanager\service\TaskService.java
 C:\Users\yelen\dev\projects\task-manager-backend\task-manager\src\main\java\com\example\taskmanager\controller\TaskController.java
 C:\Users\yelen\dev\projects\task-manager-backend\task-manager\src\main\java\com\example\taskmanager\TaskManagerApplication.java

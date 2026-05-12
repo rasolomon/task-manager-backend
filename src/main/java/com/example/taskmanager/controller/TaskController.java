@@ -1,8 +1,10 @@
 package com.example.taskmanager.controller;
 
-import com.example.taskmanager.dao.TaskDao;
-import com.example.taskmanager.model.Task;
+import com.example.taskmanager.dto.TaskRequestDto;
+import com.example.taskmanager.dto.TaskResponseDto;
+import com.example.taskmanager.entity.Task;
 import com.example.taskmanager.service.TaskService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -16,24 +18,25 @@ public class TaskController {
     @Autowired
     TaskService service;
 
+    @GetMapping("/tasks/{id}")
+    public TaskResponseDto getTaskById(@PathVariable int id) {
+        return service.getTaskById(id);
+    }
+
     @GetMapping("/tasks")
-    public List<Task> getAllTasks() {
+    public List<TaskResponseDto> getAllTasks() {
         return service.getAllTasks();
     }
 
     @PostMapping("/tasks")
-    public ResponseEntity<String> addTask(@RequestBody Task task) {
-        return service.addTask(task);
+    public ResponseEntity<TaskResponseDto> addTask(@Valid @RequestBody TaskRequestDto taskRequestDto) {
+        Task task = service.addTask(taskRequestDto);
+        return ResponseEntity.ok(service.convertToDto(task));
     }
 
     @PutMapping("/tasks/{id}")
-    public ResponseEntity<String> updateTask(@PathVariable int id, @RequestBody Task task ) {
-        return service.updateTask(id, task);
-    }
-
-    @GetMapping("/tasks/{id}")
-    public Task getTaskById(@PathVariable int id) {
-        return service.getTaskById(id);
+    public ResponseEntity<String> updateTask(@PathVariable int id, @Valid @RequestBody TaskRequestDto taskRequestDto ) {
+        return service.updateTask(id, taskRequestDto);
     }
 
     @DeleteMapping("/tasks/{id}")
@@ -42,12 +45,12 @@ public class TaskController {
     }
 
     @GetMapping("/tasks/completed")
-    public List<Task> getCompletedTasks() {
+    public List<TaskResponseDto> getCompletedTasks() {
         return service.getCompletedTasks();
     }
 
     @GetMapping("/tasks/pending")
-    public List<Task> getPendingTasks() {
+    public List<TaskResponseDto> getPendingTasks() {
         return service.getPendingTasks();
     }
 
